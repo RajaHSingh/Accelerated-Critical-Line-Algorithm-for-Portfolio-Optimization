@@ -1,0 +1,331 @@
+the values for file size: ./501/501 
+
+The max sharpe ratio is 
+ (0.10144967284411383, 3.4743942471661735)
+The min variance is 
+ [[ 0.06812447]] 
+#############################START OF PROFILE INFORMATION ######################
+         373084047 function calls (373083445 primitive calls) in 811.662 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.254    1.254  811.492  811.492 main.py:386(solve)
+    59554   70.787    0.001  769.936    0.013 main.py:375(getMatrices)
+   119108   43.259    0.000  498.468    0.004 main.py:139(reduceMatrix_gpu)
+   119108   46.594    0.000  196.715    0.002 main.py:125(reduceMatrix_cpu)
+  7411244   83.326    0.000  171.108    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:748(__getitem__)
+ 29717446   25.581    0.000  150.075    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/function_base.py:3820(append)
+  3824730   66.921    0.000  149.898    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/driver.py:360(function_call)
+  7649462   77.982    0.000  117.781    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:158(__init__)
+  3824730   60.075    0.000   79.720    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/driver.py:122(_build_arg_buf)
+ 29717446   75.438    0.000   75.438    0.000 {numpy.core.multiarray.concatenate}
+   119108   61.509    0.001   61.509    0.001 {method 'randn' of 'mtrand.RandomState' objects}
+   238218    1.155    0.000   59.498    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:910(to_gpu)
+ 29717450   19.541    0.000   49.055    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:464(asanyarray)
+  7649462   14.848    0.000   35.763    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:105(splay)
+ 30015529   32.789    0.000   32.789    0.000 {numpy.core.multiarray.array}
+    63125    4.877    0.000   32.285    0.001 main.py:352(computeLambda)
+   648689   26.523    0.000   26.523    0.000 {numpy.core._dotblas.dot}
+  7649462    5.483    0.000   20.915    0.000 <string>:1(_splay_backend)
+ 72910270   19.448    0.000   19.448    0.000 {isinstance}
+  7649462   15.427    0.000   15.432    0.000 /usr/local/lib/python2.7/dist-packages/pytools/__init__.py:417(_deco)
+   238218    6.948    0.000   11.679    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:216(set)
+   119108    5.655    0.000    9.200    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:248(get)
+    59554    5.480    0.000    6.917    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:455(inv)
+ 41835734    6.519    0.000    6.519    0.000 {method 'append' of 'list' objects}
+ 14822488    5.543    0.000    5.543    0.000 {method 'indices' of 'slice' objects}
+   357326    1.822    0.000    4.918    0.000 /usr/local/lib/python2.7/dist-packages/pytools/__init__.py:455(wrapper)
+  3824730    4.910    0.000    4.910    0.000 {pycuda._pvt_struct.pack}
+45604930/45604910    4.215    0.000    4.215    0.000 {len}
+    59680    0.235    0.000    3.977    0.000 main.py:119(getB)
+    59680    3.303    0.000    3.303    0.000 main.py:122(diffLists)
+ 22948384    3.257    0.000    3.257    0.000 {method 'pop' of 'dict' objects}
+   119108    1.839    0.000    2.920    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/stride_tricks.py:23(as_strided)
+   238218    0.343    0.000    2.512    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:211(flags)
+   238218    0.807    0.000    2.170    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/compyte/array.py:49(__init__)
+   297772    1.878    0.000    1.878    0.000 {method 'astype' of 'numpy.ndarray' objects}
+   178663    0.193    0.000    1.133    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:394(asarray)
+   126502    0.221    0.000    1.020    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:141(ones)
+   238218    0.707    0.000    0.797    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/compyte/array.py:28(f_contiguous_strides)
+   245610    0.698    0.000    0.698    0.000 {numpy.core.multiarray.empty}
+        1    0.525    0.525    0.675    0.675 main.py:213(purgeNumErr)
+   238218    0.534    0.000    0.565    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/compyte/array.py:38(c_contiguous_strides)
+   126502    0.540    0.000    0.540    0.000 {numpy.core.multiarray.copyto}
+   416925    0.516    0.000    0.516    0.000 {getattr}
+    59999    0.440    0.000    0.440    0.000 {range}
+    59554    0.207    0.000    0.379    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:139(_commonType)
+        1    0.143    0.143    0.329    0.329 /usr/local/lib/python2.7/dist-packages/numpy/lib/npyio.py:1180(genfromtxt)
+    59554    0.118    0.000    0.275    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:106(_makearray)
+    59554    0.117    0.000    0.179    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+        1    0.001    0.001    0.166    0.166 main.py:266(getMaxSR)
+       86    0.011    0.000    0.164    0.002 main.py:286(goldenSection)
+      130    0.154    0.001    0.154    0.001 {sum}
+     3956    0.053    0.000    0.153    0.000 main.py:279(evalSR)
+    59554    0.104    0.000    0.116    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+    59554    0.116    0.000    0.116    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:101(get_linalg_error_extobj)
+   119108    0.060    0.000    0.101    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:111(isComplexType)
+   252504    0.094    0.000    0.094    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:666(_loose_call)
+   238232    0.093    0.000    0.093    0.000 {setattr}
+   181672    0.093    0.000    0.093    0.000 {issubclass}
+   119108    0.080    0.000    0.080    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/stride_tricks.py:19(__init__)
+    59554    0.047    0.000    0.067    0.000 /usr/local/lib/python2.7/dist-packages/numpy/linalg/linalg.py:124(_realType)
+      126    0.007    0.000    0.061    0.000 main.py:333(computeW)
+    59562    0.042    0.000    0.042    0.000 {max}
+      505    0.001    0.000    0.028    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:215(_delimited_splitter)
+     3822    0.028    0.000    0.028    0.000 main.py:326(computeBi)
+     1014    0.027    0.000    0.027    0.000 {method 'split' of 'str' objects}
+        5    0.022    0.004    0.022    0.004 {zip}
+    59632    0.020    0.000    0.020    0.000 {min}
+    59611    0.020    0.000    0.020    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.019    0.019 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:118(open)
+        1    0.000    0.000    0.019    0.019 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:461(open)
+        1    0.000    0.000    0.018    0.018 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:312(_findfile)
+    59554    0.017    0.000    0.017    0.000 {method '__array_prepare__' of 'numpy.ndarray' objects}
+        1    0.001    0.001    0.017    0.017 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:402(exists)
+        1    0.002    0.002    0.015    0.015 /usr/lib/python2.7/urllib2.py:76(<module>)
+        1    0.006    0.006    0.012    0.012 main.py:234(purgeExcess)
+      501    0.005    0.000    0.011    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:589(__init__)
+        1    0.001    0.001    0.010    0.010 /usr/lib/python2.7/httplib.py:67(<module>)
+      160    0.002    0.000    0.005    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/gpuarray.py:76(_splay_backend)
+        1    0.005    0.005    0.005    0.005 /usr/lib/python2.7/socket.py:45(<module>)
+        1    0.000    0.000    0.005    0.005 main.py:98(initAlgo)
+        7    0.000    0.000    0.003    0.000 /usr/lib/python2.7/re.py:188(compile)
+        7    0.000    0.000    0.003    0.000 /usr/lib/python2.7/re.py:226(_compile)
+        7    0.000    0.000    0.003    0.000 /usr/lib/python2.7/sre_compile.py:495(compile)
+      160    0.003    0.000    0.003    0.000 /usr/local/lib/python2.7/dist-packages/pycuda/tools.py:234(__init__)
+     1503    0.002    0.000    0.003    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numerictypes.py:736(issubdtype)
+        1    0.000    0.000    0.003    0.003 /usr/lib/python2.7/ssl.py:56(<module>)
+        1    0.000    0.000    0.002    0.002 /usr/lib/python2.7/urllib.py:23(<module>)
+        1    0.000    0.000    0.002    0.002 /usr/lib/python2.7/textwrap.py:2(<module>)
+ 1002/501    0.001    0.000    0.002    0.000 /usr/local/lib/python2.7/dist-packages/numpy/compat/py3k.py:79(asbytes_nested)
+        1    0.000    0.000    0.002    0.002 main.py:258(getMinVar)
+        1    0.000    0.000    0.002    0.002 /usr/lib/python2.7/textwrap.py:32(TextWrapper)
+      301    0.000    0.000    0.002    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/function_base.py:837(copy)
+        7    0.000    0.000    0.002    0.000 /usr/lib/python2.7/sre_compile.py:480(_code)
+        7    0.000    0.000    0.002    0.000 /usr/lib/python2.7/sre_parse.py:663(parse)
+        2    0.000    0.000    0.002    0.001 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:248(_possible_names)
+        3    0.000    0.000    0.002    0.001 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:218(_iszip)
+     18/7    0.000    0.000    0.001    0.000 /usr/lib/python2.7/sre_parse.py:301(_parse_sub)
+     20/7    0.001    0.000    0.001    0.000 /usr/lib/python2.7/sre_parse.py:379(_parse)
+        5    0.000    0.000    0.001    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:93(keys)
+        6    0.001    0.000    0.001    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:78(_load)
+     37/7    0.000    0.000    0.001    0.000 /usr/lib/python2.7/sre_compile.py:32(_compile)
+     1503    0.001    0.000    0.001    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numerictypes.py:668(issubclass_)
+        1    0.000    0.000    0.001    0.001 /usr/lib/python2.7/urllib2.py:823(AbstractBasicAuthHandler)
+     1003    0.001    0.000    0.001    0.000 {hasattr}
+       21    0.000    0.000    0.001    0.000 /usr/lib/python2.7/sre_compile.py:178(_compile_charset)
+      194    0.000    0.000    0.001    0.000 {method 'format' of 'str' objects}
+       21    0.001    0.000    0.001    0.000 /usr/lib/python2.7/sre_compile.py:207(_optimize_charset)
+        1    0.001    0.001    0.001    0.001 /usr/lib/python2.7/mimetools.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:1681(array_str)
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:343(array2string)
+      507    0.001    0.000    0.001    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:233(_array2string)
+      485    0.000    0.000    0.001    0.000 /usr/lib/python2.7/urllib.py:1199(<genexpr>)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:361(_compile_info)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:24(_show_warning)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:533(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:547(fillFormat)
+      160    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:201(get)
+      501    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:539(_dtypeortype)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/base64.py:3(<module>)
+        1    0.000    0.000    0.000    0.000 main.py:311(efFrontier)
+      197    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:182(__next)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:686(sort)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/gzip.py:4(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'numpy.ndarray' objects}
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:36(formatwarning)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/os.py:35(_get_exports_list)
+    50/24    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:140(getwidth)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/linecache.py:13(getline)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/linecache.py:33(getlines)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/abc.py:86(__new__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/linecache.py:68(updatecache)
+      213    0.000    0.000    0.000    0.000 {abs}
+      141    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:130(__getitem__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:700(__init__)
+        3    0.000    0.000    0.000    0.000 {numpy.core.multiarray.zeros}
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:257(_isurl)
+        1    0.000    0.000    0.000    0.000 {dir}
+      740    0.000    0.000    0.000    0.000 {chr}
+        1    0.000    0.000    0.000    0.000 {method 'readlines' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urlparse.py:129(urlparse)
+        8    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:257(_escape)
+       10    0.000    0.000    0.000    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+      158    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:195(match)
+        2    0.000    0.000    0.000    0.000 {method 'write' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:112(flatten_dtype)
+       52    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:343(abspath)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:2251(prod)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/socket.py:179(_socketobject)
+        4    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urlparse.py:160(urlsplit)
+        6    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x8b7e00}
+       86    0.000    0.000    0.000    0.000 {math.log}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:203(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/_methods.py:34(_prod)
+       16    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:354(_simple)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:341(abspath)
+        2    0.000    0.000    0.000    0.000 {method 'index' of 'list' objects}
+      2/1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:465(_formatArray)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:2428(seterr)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/abc.py:89(<genexpr>)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:1764(any)
+       17    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:225(_class_escape)
+        3    0.000    0.000    0.000    0.000 {open}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:258(_mk_bitmap)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:388(_sanitize_relative_path)
+        1    0.000    0.000    0.000    0.000 {method 'readline' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:2813(__enter__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/rfc822.py:71(<module>)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:312(normpath)
+        3    0.000    0.000    0.000    0.000 {method 'any' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:598(__call__)
+       50    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:138(append)
+       74    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:126(__len__)
+        2    0.000    0.000    0.000    0.000 {next}
+       86    0.000    0.000    0.000    0.000 {math.ceil}
+       37    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:90(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:95(splitext)
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:2818(__exit__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:639(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/_methods.py:37(_any)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/function_base.py:9(linspace)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:178(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/gzip.py:36(GzipFile)
+        2    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:632(_digits)
+        2    0.000    0.000    0.000    0.000 {posix.stat}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:115(URLopener)
+        8    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:2524(geterr)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:60(join)
+       14    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:474(isstring)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/_weakrefset.py:36(__init__)
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/genericpath.py:85(_splitext)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:339(__enter__)
+       11    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+       16    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:51(fixup)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:235(_splitzipext)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/genericpath.py:15(exists)
+        3    0.000    0.000    0.000    0.000 {method 'compress' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/_internal.py:276(_newnames)
+        7    0.000    0.000    0.000    0.000 {_sre.compile}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/socket.py:235(_fileobject)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:304(__init__)
+        4    0.000    0.000    0.000    0.000 <string>:8(__new__)
+       92    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_compile.py:24(_identityfunction)
+        8    0.000    0.000    0.000    0.000 {numpy.core.umath.seterrobj}
+        9    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/rfc822.py:85(Message)
+        6    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:83(closegroup)
+        2    0.000    0.000    0.000    0.000 {time.time}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:816(easy_dtype)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/fromnumeric.py:1283(ravel)
+       68    0.000    0.000    0.000    0.000 {ord}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:189(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/ssl.py:100(SSLSocket)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:30(_is_string_like)
+        6    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        6    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:72(opengroup)
+        7    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:67(__init__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:318(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:669(HTTPConnection)
+        2    0.000    0.000    0.000    0.000 {numpy.core.multiarray.result_type}
+        1    0.000    0.000    0.000    0.000 {posix.getcwd}
+        4    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/numeric.py:2809(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'copy' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:51(isabs)
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+       23    0.000    0.000    0.000    0.000 {_sre.getlower}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:325(HTTPResponse)
+        7    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {map}
+        5    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       16    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:134(__setitem__)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:689(__init__)
+       12    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:193(Request)
+        5    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:716(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'squeeze' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:149(HTTPError)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:457(_extendLine)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1261(LineAndFileWrapper)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:609(FancyURLopener)
+        4    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/rfc822.py:770(AddressList)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1165(HTTPS)
+       16    0.000    0.000    0.000    0.000 {numpy.core.umath.geterrobj}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1219(HTTPCookieProcessor)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1413(CacheFTPHandler)
+        1    0.000    0.000    0.000    0.000 {_functools.reduce}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:974(addclosehook)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/socket.py:167(_closedsocket)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1095(AbstractHTTPHandler)
+        1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/rfc822.py:496(AddrlistClass)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:355(__exit__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:307(OpenerDirector)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_iotools.py:40(_is_bytes_like)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:112(__getitem__)
+        2    0.000    0.000    0.000    0.000 /usr/lib/python2.7/warnings.py:14(warnpy3k)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:925(AbstractDigestAuthHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1140(HTTPSConnection)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1220(IncompleteRead)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1044(HTTP)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:850(ftpwrapper)
+        1    0.000    0.000    0.000    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/mimetools.py:20(Message)
+        1    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 /usr/lib/python2.7/posixpath.py:102(splitdrive)
+        2    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1301(FileHandler)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:32(product)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:999(addinfourl)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:744(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:218(HTTPMessage)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1206(InvalidURL)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1204(HTTPHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1243(ResponseNotReady)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:489(BaseHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:706(ProxyHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:136(URLError)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1353(FTPHandler)
+        1    0.000    0.000    0.000    0.000 {strop.maketrans}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:749(HTTPPasswordMgr)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1065(HTTPDigestAuthHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1217(UnimplementedFileMode)
+        1    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/lib/_datasource.py:213(__del__)
+        1    0.000    0.000    0.000    0.000 {iter}
+        1    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1083(ProxyDigestAuthHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:989(addinfo)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:883(HTTPBasicAuthHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:205(tell)
+        3    0.000    0.000    0.000    0.000 /usr/local/lib/python2.7/dist-packages/numpy/core/arrayprint.py:661(__init__)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1253(LineTooLong)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:529(HTTPRedirectHandler)
+        1    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1237(UnknownHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1203(NotConnected)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:525(HTTPDefaultErrorHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1198(HTTPException)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:895(ProxyBasicAuthHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:945(addbase)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/sre_parse.py:85(checkgroup)
+        1    0.000    0.000    0.000    0.000 {thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1209(UnknownProtocol)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:1212(HTTPSHandler)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1214(UnknownTransferEncoding)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1240(CannotSendHeader)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1234(ImproperConnectionState)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:813(HTTPPasswordMgrWithDefaultRealm)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1246(BadStatusLine)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib.py:109(ContentTooShortError)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/httplib.py:1237(CannotSendRequest)
+        1    0.000    0.000    0.000    0.000 /usr/lib/python2.7/urllib2.py:508(HTTPErrorProcessor)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+
