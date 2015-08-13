@@ -11,3 +11,4 @@ seq	uploaded all data and code contains the sequential algorithm after I altered
 gpu_optimized_cla.pdf -the latex paper (IEEE format)
 
 Each of the folders contains the data so each part can be tested independently
+ 
